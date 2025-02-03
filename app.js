@@ -26,7 +26,7 @@ app.post("/send-email", async (req, res) => {
 
     const emailRes = await resend.emails.send({
       from: "centra-windows@gopalgautam.ca",
-      to: ["gopalgautam05@gmail.com", "shresthasony56@gmail.com"],
+      to: ["VKhatri@centra.ca", "mxu@centra.ca"],
       subject: subject,
       html: orderTemplate({ data: data }),
       attachments: [
