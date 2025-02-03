@@ -17,7 +17,7 @@ app.use(
   })
 );
 
-app.use(express.json()); // For parsing application/json
+app.use(express.json({ limit: "50mb" })); // For parsing application/json
 
 // Endpoint to send email
 app.post("/send-email", async (req, res) => {
